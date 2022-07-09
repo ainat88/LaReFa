@@ -1,0 +1,172 @@
+/* Обнуление */
+/* ========================================= */
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 18px;
+  line-height: 2;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/* ========================================== */
+/* Конец обнуления */
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  background-image: url("/img/bg.jpg");
+}
+
+.shop__body {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+.title {
+  margin: 20px 0 10px 0;
+  font-size: 32px;
+  text-align: center;
+  font-weight: 800;
+}
+.subtitle {
+  margin-bottom: 20px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.subtitle span {
+  text-transform: uppercase;
+  font-weight: 800;
+}
+.descr {
+  text-align: center;
+}
+.order {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+.link {
+  background: #95b8d1;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #000;
+}
+.link:hover {
+  background: #71a5ca;
+  border: 1px solid #5793bf;
+}
+
+.link:active {
+  background: #4185b5;
+  border: 1px solid #2a77ad;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.card {
+  padding: 10px;
+  border: thin #c0c0c0 solid;
+  display: flex;
+  flex-flow: column;
+  max-width: 420px;
+  margin: auto;
+}
+
+.card__image {
+  width: 400px;
+  height: 100%;
+}
+
+.figc {
+  background: #95b8d1;
+  text-align: center;
+  padding: 3px;
+}
+
+.resume {
+  text-align: center;
+  margin: 10px 0 0 0;
+}
+
+.resume span {
+  font-weight: 800;
+}
